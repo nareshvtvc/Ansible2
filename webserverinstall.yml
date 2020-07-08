@@ -7,8 +7,18 @@
        name: "{{linuxserver}}"
        state: present
       when: ansible_os_family =="Debian"
+    - name: i want to start my webservices on ubuntu
+      service:
+        name: "{{linuxserver}}"
+        state: started
+      when: ansible_os-family =="Debian"
     - name: installing webserveron redhat node
       yum:
        name: "{{redhatserver}}"
        state: present
+      when: ansible_os_family =="RedHat"
+    - name: i want to start my webservices on redhat
+      service:
+         name: "{{redhatserver}}"
+         state: started
       when: ansible_os_family =="RedHat"
