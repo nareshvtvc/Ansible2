@@ -1,0 +1,23 @@
+---
+- hosts: wbservers
+  become: yes
+  tasks:
+   - name: i want to execute linux commands
+     command: hostname -f
+     register: myresult
+
+   - name: i want to display above task result
+     debug:
+      msg: "{{myresult}}"
+
+   - name: i want to install git
+     apt:
+      name: git
+      state: present
+     when: myresult.stderr ==""
+  
+   - name: i want to install tree
+     apt:
+      name: tree
+      state: present
+     when: myresult.stderr !=""
