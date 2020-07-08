@@ -1,0 +1,6 @@
+---
+- hosts: wbservers
+  become: yes
+  tasks:
+  - name: i want to include playbook
+    include: myfilecreate.yml
