@@ -1,0 +1,14 @@
+---
+ - hosts: [wbservers]
+   become: yes
+   tasks:
+    - name: installing webserviceon ubuntu node
+      apt:
+       name: "{{linuxserver}}"
+       state: present
+      when: ansible_os_family =="Debian"
+    - name: installing webserveron redhat node
+      yum:
+       name: "{{redhatserver}}"
+       state: present
+      when: ansible_os_family =="RedHat"
