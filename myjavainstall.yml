@@ -1,0 +1,16 @@
+---
+- hosts: wbservers
+  become: yes
+  tasks:
+   - name: i want to install java on ubuntu
+     apt:
+      name: "{{myjavaonubuntu}}"
+      state: present
+     when: ansible_os_family =="Debian"
+  
+   - name: i want to install java on redhat
+     yum:
+      name: "{{myjavaonredhat}}"
+      state: present
+     when: ansible_os_family =="RedHat"
+
