@@ -1,0 +1,5 @@
+---
+- name: i want to create file on nodes
+  file:
+   path: /home/ubuntu/mytextfile
+   state: touch
