@@ -11,7 +11,7 @@
       service:
         name: "{{linuxserver}}"
         state: started
-      when: ansible_os-family =="Debian"
+      when: ansible_os_family =="Debian"
     - name: installing webserveron redhat node
       yum:
        name: "{{redhatserver}}"
