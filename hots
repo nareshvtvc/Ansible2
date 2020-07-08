@@ -5,5 +5,8 @@
 [dbservers]
 172.31.32.78
 
-[wbserver]
+[ubuntu]
+172.31.32.78
+
+[redhat]
 172.31.40.18
