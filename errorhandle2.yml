@@ -9,7 +9,7 @@
   - name: 2nd install tree
     apt: 
      name: treerdeeee
-     ignore_errors: yes
+    ignore_errors: yes
 
   - name: 3rd install wget
     apt: 
