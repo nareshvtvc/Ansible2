@@ -1,11 +1,4 @@
----
-- include: myjavainstall.yml
-- include: mytomcatusergrp.yml
-- include: download.yml
-- include: extract.yml
-- include: permissions.yml
-- include: mytomconfig.yml
-- include: mytomstart.yml
+
 
 
 
