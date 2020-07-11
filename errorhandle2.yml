@@ -8,7 +8,7 @@
 
   - name: 2nd install tree
     apt: 
-     name: tree
+     name: treerdeeee
 
   - name: 3rd install wget
     apt: 
