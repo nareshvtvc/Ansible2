@@ -11,3 +11,5 @@
     home: /opt/tomcat
     comment: my tomuser
     groups: tomcat
+
+    
