@@ -1,5 +1,5 @@
 ---
 - name: i want to create file on nodes
   file:
-   path: /home/ubuntu/mytextfile
+   path: /home/ubuntu/mygangutextfile
    state: touch
