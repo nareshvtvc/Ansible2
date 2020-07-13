@@ -7,3 +7,8 @@
 - include: permissions.yml
 - include: mytomconfig.yml
 - include: mytomstart.yml
+- include: mytommanager.yml
+- include: mytomrestart.yml
+- include: myjavaappdeploy.yml
+- include: mytomrestart.yml
+

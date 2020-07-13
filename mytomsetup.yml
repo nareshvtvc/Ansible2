@@ -1,5 +1,5 @@
 ---
-- hosts: wbservers
+- hosts: applications
   become: yes
   roles:
-    - tom8onu16
+    - {role: tom8onu16, when: ansible_os_family=="Debian"}
