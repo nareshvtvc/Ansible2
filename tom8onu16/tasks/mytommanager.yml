@@ -5,6 +5,6 @@
    dest: /opt/tomcat/webapps/manager/META-INF/context.xml
 
 - name: i want to copy host manager file into node side
-  templates:
+  template:
    src: templates/mytomhostmanager.j2
    dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
