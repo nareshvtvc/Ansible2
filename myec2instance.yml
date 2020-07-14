@@ -8,7 +8,7 @@
      instance_type: t2.micro
      key_name: virginia
      image: ami-0b786a1a999c4e98e
-     region: us-east-1b
+     region: us-east-1
      group: default
      count: 1
      vpc_subnet_id: subnet-f03bdc96
