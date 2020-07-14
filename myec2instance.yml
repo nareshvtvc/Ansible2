@@ -1,5 +1,6 @@
 ---
 - hosts: localhost
+  connection: loaclhost
   tasks:
   - name: i want to launch ec2 instance
     ec2:
