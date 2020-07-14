@@ -2,6 +2,18 @@
 - hosts: localhost
   connection: local
   tasks:
+  - name: install python on node 
+    apt:
+      name: python 
+      state: present
+  - name: install boto on node
+    apt: 
+      name: python-boto
+      state: present
+  - name: restart service python-boto
+    service: 
+      name: python-boto
+
   - name: i want to launch ec2 instance
     ec2:
      aws_access_key: AKIAR4M5SM24SKG6NVMN
