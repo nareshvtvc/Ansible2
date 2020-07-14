@@ -1,7 +1,5 @@
 ---
 - hosts: localhost
-  connection: local
-  gather_facts: false
   tasks:
   - name: i want to launch ec2 instance
     ec2:
