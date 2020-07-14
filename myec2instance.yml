@@ -1,9 +1,11 @@
 ---
 - hosts: localhost
-  connection: loaclhost
+  connection: local
   tasks:
   - name: i want to launch ec2 instance
     ec2:
+     aws_access_key: AKIAR4M5SM24SKG6NVMN
+     aws_secret_key: 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
      instance_type: t2.micro
      key_name: virginia
      image: ami-0b786a1a999c4e98e
