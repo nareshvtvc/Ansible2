@@ -1,6 +1,7 @@
 ---
 - hosts: localhost
   connection: local
+  gather_facts: false
   tasks:
   - name: i want to launch ec2 instance
     ec2:
@@ -10,7 +11,7 @@
      key_name: virginia
      image: ami-0b786a1a999c4e98e
      region: us-east-1
-     group: ansible
+     group: default
      count: 1
      vpc_subnet_id: subnet-3ab35065
      wait: yes
