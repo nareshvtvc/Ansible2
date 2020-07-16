@@ -1,0 +1,12 @@
+---
+- hosts: applications
+  become: yes
+  tasks:
+  - name: 
+    apt:
+      name: "{{item}}"
+      state: present
+    loop:
+      - git
+      - tree
+      - wget
